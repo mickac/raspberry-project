@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class PeopleList(models.Model):
+    name = models.CharField(max_length=20)
+    email = models.EmailField()
+    info = models.CharField(max_length=300)
+    created_at = models.DateTimeField(auto_now_add=True)

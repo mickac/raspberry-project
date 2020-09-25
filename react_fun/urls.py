@@ -6,8 +6,9 @@ from django.views.generic.base import TemplateView
 
 from . import views
 
-app_name='lekarze'
+app_name='react_fun'
 urlpatterns = [
-        url(r'^$', TemplateView.as_view(template_name='index.html'),
-        name='home'),
+        #url(r'^$', TemplateView.as_view(template_name='index.html'),
+        #name='home'),
+        path('api/', views.PeopleListCreate.as_view() ),
 ]

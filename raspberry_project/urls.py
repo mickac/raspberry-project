@@ -20,6 +20,7 @@ from django.views.generic.base import TemplateView, RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('reactfun/', include('react_fun.urls')),
-
+    #path('reactfun/', include('react_fun.urls')),
+    path('', include('react_fun.urls')),
+    path('', include('react_fun_frontend.urls')),
 ]
