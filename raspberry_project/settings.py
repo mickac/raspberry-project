@@ -25,12 +25,14 @@ SECRET_KEY = '+b#5@et5apn7ngdoyghl307(%(pq$y!$w@d++lv_k6752zh^ce'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'react_fun',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
